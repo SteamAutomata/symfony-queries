@@ -1,35 +1,33 @@
 # Tutorials, Fortune Cookies & Doctrine Queries
 
-Well hi there! This repository holds the code and script
-for the [Doctrine Queries Tutorials](https://symfonycasts.com/screencast/doctrine-queries) on SymfonyCasts.
+Ce dépôt contient le code et le script pour les [tutoriels sur les requêtes Doctrine](https://symfonycasts.com/screencast/doctrine-queries) sur SymfonyCasts.
 
+## Configuration
 ## Setup
 
-If you've just downloaded the code, congratulations!!
+Pour le faire fonctionner, suivez ces étapes :
 
-To get it working, follow these steps:
+**Télécharger les dépendances de Composer**
 
-**Download Composer dependencies**
+Assurez-vous d'avoir [Composer installé](https://getcomposer.org/download/) 
+et exécutez ensuite :
 
-Make sure you have [Composer installed](https://getcomposer.org/download/)
-and then run:
-
-```
+```bash
 composer install
 ```
 
-You may alternatively need to run `php composer.phar install`, depending
-on how you installed Composer.
+ous devrez éventuellement exécuter php composer.phar install, 
+selon comment vous avez installé Composer.
 
-**Database Setup**
+**Configuration de la base de données**
 
-The code comes with a `docker-compose.yaml` file and we recommend using
-Docker to boot a database container. You will still have PHP installed
-locally, but you'll connect to a database inside Docker. This is optional,
-but I think you'll love it!
+Le code est livré avec un fichier docker-compose.yaml et nous recommandons
+d'utiliser Docker pour démarrer un conteneur de base de données. 
+PHP sera toujours installé en local, mais vous vous connecterez à une base de données
+ à l'intérieur de Docker. C'est facultatif, mais je pense que vous allez l'adorer !
 
-First, make sure you have [Docker installed](https://docs.docker.com/get-docker/)
-and running. To start the container, run:
+Tout d'abord, assurez-vous d'avoir Docker installé et en cours d'exécution. 
+Pour démarrer le conteneur, exécutez :
 
 ```
 docker compose up -d
