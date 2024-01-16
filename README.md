@@ -9,7 +9,7 @@ Pour le faire fonctionner, suivez ces étapes :
 
 **Télécharger les dépendances de Composer**
 
-Assurez-vous d'avoir [Composer installé](https://getcomposer.org/download/) 
+Assurez-vous d'avoir [installé Composer ](https://getcomposer.org/download/) 
 et exécutez ensuite :
 
 ```bash
