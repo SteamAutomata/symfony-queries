@@ -33,7 +33,7 @@ Pour démarrer le conteneur, exécutez :
 docker compose up -d
 ```
 
-Next, build the database with:
+Ensuite, construisez la base de données avec :
 
 ```
 # "symfony console" is equivalent to "bin/console"
@@ -43,46 +43,46 @@ symfony console doctrine:schema:update --force
 symfony console doctrine:fixtures:load
 ```
 
-(If you get an error about "MySQL server has gone away", just wait
-a few seconds and try again - the container is probably still booting).
+(Si vous obtenez une erreur concernant "Le serveur MySQL a disparu", 
+attendez quelques secondes et réessayez - le conteneur est probablement encore en train de démarrer).
 
-If you do *not* want to use Docker, just make sure to start your own
-database server and update the `DATABASE_URL` environment variable in
-`.env` or `.env.local` before running the commands above.
+Si vous ne souhaitez pas utiliser Docker, assurez-vous simplement de démarrer votre propre serveur de base de données
+et de mettre à jour la variable d'environnement  `DATABASE_URL` dans
+`.env` ou `.env.local`avant d'exécuter les commandes ci-dessus.
 
-**Start the Symfony web server**
+**Démarrez le serveur Web Symfony**
 
 You can use Nginx or Apache, but Symfony's local web server
 works even better.
 
-To install the Symfony local web server, follow
-"Downloading the Symfony client" instructions found
-here: https://symfony.com/download - you only need to do this
-once on your system.
+Vous pouvez utiliser Nginx ou Apache, mais le serveur Web local de Symfony fonctionne encore mieux.
 
-Then, to start the web server, open a terminal, move into the
-project, and run:
+Pour installer le serveur Web local Symfony, suivez les instructions
+« Téléchargement du client Symfony » trouvées ici :: https://symfony.com/download 
+- vous ne devez le faire qu'une seule fois sur votre système.
+
+Ensuite, pour démarrer le serveur Web, ouvrez un terminal, accédez au projet et exécutez :
 
 ```
 symfony serve
 ```
 
-(If this is your first time using this command, you may see an
-error that you need to run `symfony server:ca:install` first).
+(Si c'est la première fois que vous utilisez cette commande, 
+vous verrez peut-être une erreur que vous devrez `symfony server:ca:install` d'abord exécuter).
 
-Now check out the site at `https://localhost:8000`
+Consultez maintenant le site à `https://localhost:8000`
 
-Have fun!
 
-**OPTIONAL: Webpack Encore Assets**
 
-This app uses Webpack Encore for the CSS, JS and image files.
-But, the built files are already included... so you don't need
-to download or build anything if you don't want to!
+**FACULTATIF L: Webpack Encore Assets**
 
-But if you *do* want to play with the CSS/JS and build the
-final files, no problem. Make sure you have [yarn](https://yarnpkg.com/lang/en/)
-or `npm` installed (`npm` comes with Node) and then run:
+Cette application utilise Webpack Encore pour les fichiers CSS, 
+JS et image. Mais les fichiers construits sont déjà inclus... 
+
+vous n'avez donc pas besoin de télécharger ou de construire quoi que ce soit si vous ne le souhaitez pas !
+
+Mais si vous souhaitez jouer avec le CSS/JS et créer les fichiers finaux, pas de problème. 
+Assurez-vous d'avoir installé `npm`  (`npm` fourni avec Node), puis exécutez :
 
 ```
 yarn install
@@ -93,11 +93,7 @@ npm install
 npm run watch
 ```
 
-## Have Ideas, Feedback or an Issue?
 
-If you have suggestions or questions, please feel free to
-open an issue on this repository or comment on the course
-itself. We're watching both :).
 
 
 
