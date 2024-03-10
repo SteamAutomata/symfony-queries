@@ -16,7 +16,7 @@ et exécutez ensuite :
 composer install
 ```
 
-ous devrez éventuellement exécuter php composer.phar install, 
+Vous devrez éventuellement exécuter php composer.phar install, 
 selon comment vous avez installé Composer.
 
 **Configuration de la base de données**
